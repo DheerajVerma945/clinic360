@@ -12,8 +12,8 @@ This project is a **Doctor Search & Appointment Booking System** built using the
 - **Database:** MongoDB
 - **Email Notifications:** Nodemailer
 - **Deployment:**
-  - **Frontend:** Vercel/Netlify
-  - **Backend:** Render/AWS Lambda
+  - **Frontend:** Vercel
+  - **Backend:** Render
 
 ---
 
@@ -24,7 +24,7 @@ This project is a **Doctor Search & Appointment Booking System** built using the
 
 ### 2. Doctor Search & Profile Management
 - Patients can search for doctors using:
-  - **Specialty** (e.g., Cardiologist, Dermatologist)
+  - **Specialty** (e.g., Cardiologist, Dentist)
   - **Location** (City, State)
   - **Doctor's Name** (Partial Match Search)
 - Doctor profile displays:
@@ -127,8 +127,8 @@ This project is a **Doctor Search & Appointment Booking System** built using the
 ---
 
 ## Live Demo
-- **Frontend:** [Live Link](https://your-frontend-url.vercel.app)
-- **Backend:** [Live API](https://your-backend-url.render.com)
+- **Frontend:** [Live Link](https://clinic-360.vercel.app/)
+- **Backend:** [Live API](https://clinic360-server.onrender.com)
 
 
 ---
