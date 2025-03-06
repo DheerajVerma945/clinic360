@@ -109,9 +109,9 @@ This project is a **Doctor Search & Appointment Booking System** built using the
 | POST   | /user/bookSlot | Book Appointment |
 
 ### Doctor Management
+
 | Method | Endpoint        | Description          |
 |--------|----------------|----------------------|
-
 | GET    | /doctor/updateData | Update Personal Data |
 | PUT    | /doctor/updateSlots | Set availability |
 
