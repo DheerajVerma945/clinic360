@@ -53,7 +53,7 @@ This project is a **Doctor Search & Appointment Booking System** built using the
 ### Backend Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo-url.git
+   git clone https://github.com/DheerajVerma945/clinic360.git
    cd backend
    ```
 2. Install dependencies:
@@ -93,31 +93,36 @@ This project is a **Doctor Search & Appointment Booking System** built using the
 ### Authentication
 | Method | Endpoint        | Description          |
 |--------|----------------|----------------------|
-| POST   | /api/auth/register | Register a user (Patient/Doctor) |
-| POST   | /api/auth/login | Login and get a JWT token |
+| POST   | /auth/signup | Register a user (Patient/Doctor) |
+| POST   | /auth/login | Login and get a JWT token |
+| POST   | /auth/logout | Logout and clear cookies |
+| POST   | /auth/checkAuth | Checking authentication |
+
+### User Management & Appointments
+
+| Method | Endpoint        | Description          |
+|--------|----------------|----------------------|
+| GET    | /user/search/doctor | Get list of doctors |
+| GET    | /user/doctor/:id | Get doctor details |
+| GET    | user/myAppointments | Get user upcoming Appointments |
+| POST   | user/cancelAppointment | Cancel scheduled appointment |
+| POST   | /user/bookSlot | Book Appointment |
 
 ### Doctor Management
 | Method | Endpoint        | Description          |
 |--------|----------------|----------------------|
-| GET    | /api/doctors | Get list of doctors |
-| GET    | /api/doctors/:id | Get doctor details |
-| PUT    | /api/doctors/:id/availability | Set availability |
 
-### Appointment Management
-| Method | Endpoint        | Description          |
-|--------|----------------|----------------------|
-| POST   | /api/appointments/book | Book an appointment |
-| DELETE | /api/appointments/:id/cancel | Cancel an appointment |
+| GET    | /doctor/updateData | Update Personal Data |
+| PUT    | /doctor/updateSlots | Set availability |
 
 ---
 
 ## Deployment
 ### Backend Deployment
-- Hosted on **Render/AWS Lambda**.
-- Ensure MongoDB is properly configured.
+- Hosted on **Render**.
 
 ### Frontend Deployment
-- Hosted on **Vercel/Netlify**.
+- Hosted on **Vercel**.
 
 ---
 
@@ -125,15 +130,9 @@ This project is a **Doctor Search & Appointment Booking System** built using the
 - **Frontend:** [Live Link](https://your-frontend-url.vercel.app)
 - **Backend:** [Live API](https://your-backend-url.render.com)
 
----
-
-## Future Enhancements
-- Implement **real-time notifications** for appointment updates.
-- Add **payment gateway** for online consultations.
-- Improve **UI/UX** with animations and accessibility enhancements.
 
 ---
 
 ## Author
-Developed by **[Your Name]** as part of the **Arogo AI - MERN Developer Intern Assignment**.
+Developed by **Dheeraj Verma** as part of the **Arogo AI - MERN Developer Intern Assignment**.
 
